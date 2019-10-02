@@ -1,0 +1,131 @@
+.container__login {
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+.backdrop__login {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 6%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form_card__login {
+    width: 360px;
+    border-radius: 5px;
+    height: auto;
+    padding-top: 10px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.logo__login,
+.button_group__login,
+.form_block__login {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+
+.logo__login img {
+    width: 50px;
+}
+
+.logo__login h2 {
+    margin-top: 5px;
+    margin-bottom: 14px;
+    color: rgb(36, 33, 33);
+    font-family: HelveticaNeue Condensed;
+    text-transform: uppercase;
+}
+
+.button_group__login a{
+    width: 315px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    padding: 14px;
+    background-color: rgb(88, 108, 160);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.button_group__login a:nth-child(2){
+    background-color: rgb(255, 255, 255);
+    color: rgb(117, 115, 115);
+    box-shadow: rgba(0, 0, 0, 0.54) 0px 1px 1px;
+}
+
+.button_group__login a:nth-child(3){
+    background-color: rgb(61, 160, 253);
+    color: rgb(255, 255, 255);
+}
+
+.button_group__login p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: rgb(99, 97, 97);
+}
+
+.form_block__login input, 
+.form_block__login button{
+    width: 315px;
+    margin-bottom: 12px;
+}
+
+.form_block__login input{
+    display: block;
+    font-size: 16px;
+    padding-left: 12px;
+    height: 40px;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    background-color: #f7f7f7;
+}
+
+.form_block__login input::placeholder{
+    color: rgb(124, 119, 119);
+}
+
+.form_block__login button{
+    height: 40px;
+    background-color: rgb(231, 152, 152);
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+}
+
+.form_block__login p > span{
+    font-weight: 600;
+    position: relative;
+    font-size: 13px;
+    color: rgb(87, 85, 85);
+}
+
+.form_block__login p > span:nth-child(2){
+    float: right;
+    top: 2px;
+}
+
+.form_block_login__footer {
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(87, 85, 85);
+}
+
+.form_block_login__footer > a {
+    text-decoration: none;
+    color: rgb(87, 85, 85);
+}
