@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import {HomeFeedList} from "./HomeFeedList/HomeFeedList"
 import classes from "./HomeFeedContent.css"
+import jQuery from "jquery"
 
 class HomeFeedContent extends Component {
     constructor (props) {
@@ -26,5 +27,19 @@ class HomeFeedContent extends Component {
         )
     }
 }
+
+(function($){
+    $(window).scroll(() => {
+        if($(window).scrollTop() >= 500) {
+            $(`.${classes.home_feed_list}`).css({
+                marginTop: '100px'
+            })
+        } else {
+            $(`.${classes.home_feed_list}`).css({
+                marginTop: '0px'
+            })
+        }
+    })
+})(jQuery)
 
 export default HomeFeedContent

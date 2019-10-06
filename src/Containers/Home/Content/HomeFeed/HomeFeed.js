@@ -1,5 +1,5 @@
 import React from "react"
-import { HomeFeedNav } from "./HomeFeedNav/HomeFeedNav"
+import HomeFeedNav from "./HomeFeedNav/HomeFeedNav"
 import HomeFeedContent from "./HomeFeedContent/HomeFeedContent"
 import { Aux } from "../../../../Components/Hocs/Auxil"
 

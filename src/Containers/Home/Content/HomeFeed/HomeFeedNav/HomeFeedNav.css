@@ -2,6 +2,7 @@
    height: auto;
    border-bottom: 1px solid rgb(209, 208, 208);
    margin-bottom: 20px;
+   background: #fff;
    width: 1200px;
 }
 
@@ -26,11 +27,8 @@
     color: rgb(145, 143, 143);    
 }
 
-.home_feed_nav li > a.active {
-    color: rgb(37, 37, 37);    
-}
-
-.home_feed_nav li > a:hover {
+.home_feed_nav li > a:focus,
+.home_feed_nav li > a:hover{
     color: rgb(37, 37, 37);    
 }
 
@@ -50,7 +48,7 @@
 
 @media (max-width: 965px) {
 	.home_feed_nav {
-		width: 800px;
+		width: 810px;
 	}
 }
 

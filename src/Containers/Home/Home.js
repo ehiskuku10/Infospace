@@ -1,19 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Route } from "react-router-dom"
 import { Header } from "./Header/Header"
-import { Content } from "./Content/Content"
 import Footer from "./Footer/Footer"
+import {Content} from "./Content/Content"
 import { Aux } from '../../Components/Hocs/Auxil'
 
-class Home extends Component {
-  render () {
-    return (
-    <Aux>
-      <Header />
-      <Content />
-      <Footer />
-    </Aux>
-    )
-  }
-}
-
-export default Home;
+export const Home = (props) => (
+  <Aux>
+    <Header />
+    <Route path="/topics" component={Content} />
+    <Footer />
+  </Aux>
+) 

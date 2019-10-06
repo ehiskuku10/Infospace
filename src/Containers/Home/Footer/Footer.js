@@ -31,7 +31,7 @@ const Footer = ({
                         <FooterLink key={index} link={footer_link} />
                     ))}
                 </ul>
-                <Link>© 2019 Flipboard</Link>
+                <Link>© 2019 Infospace</Link>
             </footer>
             <div onClick={hideBackdrop} className={styles[0]}>
                 <div className={classes.modal_input_search} onClick={(event) => event.stopPropagation()}>
