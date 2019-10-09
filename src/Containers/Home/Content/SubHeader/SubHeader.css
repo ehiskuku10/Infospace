@@ -80,6 +80,10 @@
     background-color: rgb(245, 40, 40);
 }
 
+.call_to_action_link:hover {
+    background-color: rgb(218, 31, 31);
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 683px)   {
