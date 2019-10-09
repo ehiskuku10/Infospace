@@ -71,12 +71,6 @@ img.home_feed_image {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 870px) {
-	div.home_feed_list {
-		height: 570px;
-	}
-}
-
 @media (max-width: 830px) {
 	img.home_feed_image {
 		left: -10%;
