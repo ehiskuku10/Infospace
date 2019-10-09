@@ -14,7 +14,7 @@ export const HomeFeedList = (props) => {
                     <img className={classes.home_feed_image} src={props.homeFeedImage} alt="myimage"/>
                 </div>
                 <div>
-                    <button style={{border: "none", backgroundColor: "transparent"}} type="button">
+                    <button style={{outline: "none", border: "none", backgroundColor: "transparent"}} type="button">
                         <svg role="img" width="18" height="18" viewBox="0 0 14 18">
                         <title id="share-icon-title">
                             Share
@@ -34,7 +34,7 @@ export const HomeFeedList = (props) => {
                         </svg>
                     </button>
 
-                    <button style={{border: "none", backgroundColor: "transparent"}} type="button">
+                    <button style={{outline: "none", border: "none", backgroundColor: "transparent"}} type="button">
                         <svg role="img" aria-labelledby="like-icon-title" class="like-icon " width="18" height="16" viewBox="0 0 18 16">
                             <title id="like-icon-title">Like</title>
                             <g id="iPhone-8-Copy-70" transform="translate(-290.000000, -601.000000)" stroke="#999" fill="none">
@@ -43,7 +43,7 @@ export const HomeFeedList = (props) => {
                         </svg>
                     </button>
 
-                    <button style={{border: "none", backgroundColor: "transparent"}} type="button">
+                    <button style={{outline: "none", border: "none", backgroundColor: "transparent"}} type="button">
                         <svg role="img" aria-labelledby="flip-icon-title" class="flip-icon " width="18" height="18" viewBox="0 0 18 18">
                             <title id="flip-icon-title">Flip</title>
                             <g id="logged-out" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

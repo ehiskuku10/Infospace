@@ -5,7 +5,7 @@ div.home_feed_list {
 	-webkit-animation: fadein 2s;
 	animation: fadein 2s;
 	position: relative;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid rgb(187, 184, 184);
 }
 
 @keyframes fadein {
@@ -23,6 +23,13 @@ div.home_feed_list > div:nth-child(1), div.home_feed_list > div:nth-child(3) {
 	height: 47px;
 	display: flex;
 	justify-content: flex-end;
+	padding: 20px auto;
+}
+
+div.home_feed_list > div:nth-child(3) {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px auto;
 }
 
 div.home_feed_list > div:nth-child(2) {
