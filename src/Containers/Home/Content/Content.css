@@ -6,5 +6,19 @@
 	align-items: center;
 }
 
+.main_content__button{
+	margin-top: 20px;
+    text-decoration: none;
+    background-color: rgb(245, 40, 40);;
+    padding: 7px 12px 8px;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgb(245, 40, 40);
+    font-size: 13px;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+}
+
 /* MEDIA QUERIES */
 
