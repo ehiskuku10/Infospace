@@ -1,6 +1,6 @@
 div.home_feed_list {
     width: 100%;
-	height: 570px;
+	height: auto;
 	margin: 0 auto;
 	-webkit-animation: fadein 2s;
 	animation: fadein 2s;
@@ -24,7 +24,7 @@ div.home_feed_list > div:nth-child(1), div.home_feed_list > div:nth-child(3) {
 
 div.home_feed_list > div:nth-child(2) {
 	width: 100%;
-	height: 470px;
+	height: 400px;
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
@@ -50,7 +50,7 @@ img.home_feed_image {
 }
 
 .overlay {
-	height: 83%;
+	height: 400px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 5;
