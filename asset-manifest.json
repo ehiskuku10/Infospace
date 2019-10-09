@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Infospace/static/css/main.fff8d3f4.chunk.css",
+    "main.css": "/Infospace/static/css/main.8e5ce2f5.chunk.css",
     "main.js": "/Infospace/static/js/main.40f99350.chunk.js",
     "main.js.map": "/Infospace/static/js/main.40f99350.chunk.js.map",
     "runtime~main.js": "/Infospace/static/js/runtime~main.794c49d8.js",
@@ -8,8 +8,8 @@
     "static/js/2.c2b4dfde.chunk.js": "/Infospace/static/js/2.c2b4dfde.chunk.js",
     "static/js/2.c2b4dfde.chunk.js.map": "/Infospace/static/js/2.c2b4dfde.chunk.js.map",
     "index.html": "/Infospace/index.html",
-    "precache-manifest.c5361041d4ce7c367d2671fd6dbf34f7.js": "/Infospace/precache-manifest.c5361041d4ce7c367d2671fd6dbf34f7.js",
+    "precache-manifest.40c196edb16d653028e7b853f288cf84.js": "/Infospace/precache-manifest.40c196edb16d653028e7b853f288cf84.js",
     "service-worker.js": "/Infospace/service-worker.js",
-    "static/css/main.fff8d3f4.chunk.css.map": "/Infospace/static/css/main.fff8d3f4.chunk.css.map"
+    "static/css/main.8e5ce2f5.chunk.css.map": "/Infospace/static/css/main.8e5ce2f5.chunk.css.map"
   }
 }
