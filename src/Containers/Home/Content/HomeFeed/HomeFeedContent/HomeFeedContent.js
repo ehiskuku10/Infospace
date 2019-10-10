@@ -1,27 +1,28 @@
 import React, { Component } from "react"
 import {HomeFeedList} from "./HomeFeedList/HomeFeedList"
 import classes from "./HomeFeedContent.css"
+import { connect } from 'react-redux'
 import jQuery from "jquery"
 
 class HomeFeedContent extends Component {
     constructor (props) {
         super(props)
-        this.state = {
-            homeFeedImages: [
-                `${process.env.PUBLIC_URL}/assets/images/1.jpg`,
-                `${process.env.PUBLIC_URL}/assets/images/2.jpg`,
-                `${process.env.PUBLIC_URL}/assets/images/3.jpg`,
-                `${process.env.PUBLIC_URL}/assets/images/4.jpg`,
-                `${process.env.PUBLIC_URL}/assets/images/5.jpg`,
-                `${process.env.PUBLIC_URL}/assets/images/6.jpg`
-            ]
-        }
+        // this.state = {
+        //     homeFeedImages: [
+        //         `${process.env.PUBLIC_URL}/assets/images/1.jpg`,
+        //         `${process.env.PUBLIC_URL}/assets/images/2.jpg`,
+        //         `${process.env.PUBLIC_URL}/assets/images/3.jpg`,
+        //         `${process.env.PUBLIC_URL}/assets/images/4.jpg`,
+        //         `${process.env.PUBLIC_URL}/assets/images/5.jpg`,
+        //         `${process.env.PUBLIC_URL}/assets/images/6.jpg`
+        //     ]
+        // }
     }
     render () {
         return (
             <div className={classes.home_feed_list}>
-                {this.state.homeFeedImages.map((homeFeedImage, index) => (
-                    <HomeFeedList key={index}  homeFeedImage={homeFeedImage} />
+                {this.props.photos.map((homeFeedImage, index) => (
+                    <HomeFeedList photos={this.props.photos} key={index}  homeFeedImage={homeFeedImage} />
                 ))}
             </div>
         )
@@ -42,4 +43,9 @@ class HomeFeedContent extends Component {
     })
 })(jQuery)
 
-export default HomeFeedContent
+const mapStateToProps = state => ({
+    photos: state.ChangeCategory.photos
+});
+
+
+export default connect(mapStateToProps)(HomeFeedContent);

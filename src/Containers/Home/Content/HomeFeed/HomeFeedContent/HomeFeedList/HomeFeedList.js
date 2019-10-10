@@ -11,7 +11,7 @@ export const HomeFeedList = (props) => {
                 </div>
                 <div>
                     <h2>The periodic table turns 150</h2>
-                    <img className={classes.home_feed_image} src={props.homeFeedImage} alt="myimage"/>
+                    <img className={classes.home_feed_image} src={props.homeFeedImage.src.original} alt="myimage"/>
                 </div>
                 <div>
                     <button style={{outline: "none", border: "none", backgroundColor: "transparent"}} type="button">
@@ -35,7 +35,7 @@ export const HomeFeedList = (props) => {
                     </button>
 
                     <button style={{outline: "none", border: "none", backgroundColor: "transparent"}} type="button">
-                        <svg role="img" aria-labelledby="like-icon-title" class="like-icon " width="18" height="16" viewBox="0 0 18 16">
+                        <svg role="img" aria-labelledby="like-icon-title" className="like-icon " width="18" height="16" viewBox="0 0 18 16">
                             <title id="like-icon-title">Like</title>
                             <g id="iPhone-8-Copy-70" transform="translate(-290.000000, -601.000000)" stroke="#999" fill="none">
                                 <path d="M302.614426,602 C301.093115,602 299.764153,602.849719 299.001749,604.082163 C298.235847,602.849719 296.882404,602 295.36459,602 C292.989945,602 291,604.001404 291,606.448736 C291,607.54073 291.465137,608.608146 292.185574,609.429775 L298.994754,617 L305.817923,609.429775 C306.534863,608.608146 307,607.56882 307,606.476826 C307,604.033006 304.985574,602 302.614426,602 Z" id="Heart"></path>
@@ -44,7 +44,7 @@ export const HomeFeedList = (props) => {
                     </button>
 
                     <button style={{outline: "none", border: "none", backgroundColor: "transparent"}} type="button">
-                        <svg role="img" aria-labelledby="flip-icon-title" class="flip-icon " width="18" height="18" viewBox="0 0 18 18">
+                        <svg role="img" aria-labelledby="flip-icon-title" className="flip-icon " width="18" height="18" viewBox="0 0 18 18">
                             <title id="flip-icon-title">Flip</title>
                             <g id="logged-out" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="iPhone-8-Copy-70" transform="translate(-338.000000, -600.000000)" fill="#999">
