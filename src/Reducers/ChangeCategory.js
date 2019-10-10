@@ -35,6 +35,7 @@ export const loadPhotos = (photos) => {
 
 export const fetchPhotos = (e) => (dispatch) => {
     e.preventDefault()
+    dispatch(hasLoaded(false));
     axiosInstance({
         method: "get",
         url: `https://api.pexels.com/v1/search?query=${e.target.id}&per_page=6&page=1`,
@@ -44,7 +45,7 @@ export const fetchPhotos = (e) => (dispatch) => {
     }).then(res => {
            console.log(res.data.photos)
            dispatch(switchCategory(res.data.photos));
-           dispatch(hasLoaded(false));
+           dispatch(hasLoaded(true));
     })
 }
 

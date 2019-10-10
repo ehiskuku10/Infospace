@@ -37,10 +37,6 @@ class HomeFeedContent extends Component {
         })
     }
 
-    componentDidUpdate () {
-        this.props.hasLoaded(true)
-    }
-
     render () {
         let view = ""
         
