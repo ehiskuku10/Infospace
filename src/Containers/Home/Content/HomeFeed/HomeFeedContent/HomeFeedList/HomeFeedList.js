@@ -19,7 +19,7 @@ export const HomeFeedList = (props) => {
                         <title id="share-icon-title">
                             Share
                         </title>
-                        <g id="share" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2.000000, 0)">
+                        <g id="share" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" transform="translate(-2.000000, 0)">
                             <g id="bottom" transform="translate(2.000000, 7.000000)" fill="#999">
                             <rect id="Rectangle-14" x="0" y="0" width="1" height="11"></rect>
                             <rect id="Rectangle-14" x="13" y="0" width="1" height="11"></rect>
@@ -27,8 +27,8 @@ export const HomeFeedList = (props) => {
                             </g>
                             <g id="arrow" transform="translate(5.500000, 0.000000)">
                             <rect id="Rectangle-2" fill="#999" x="3" y="1" width="1" height="11"></rect>
-                            <path d="M3.5,0.5 L6.5,3.5" id="Line-3" stroke="#999" stroke-linecap="square"></path>
-                            <path d="M3.5,0.5 L0.5,3.5" id="Line" stroke="#999" stroke-linecap="square"></path>
+                            <path d="M3.5,0.5 L6.5,3.5" id="Line-3" stroke="#999" strokeLinecap="square"></path>
+                            <path d="M3.5,0.5 L0.5,3.5" id="Line" stroke="#999" strokeLinecap="square"></path>
                             </g>
                         </g>
                         </svg>
@@ -46,7 +46,7 @@ export const HomeFeedList = (props) => {
                     <button style={{outline: "none", border: "none", backgroundColor: "transparent"}} type="button">
                         <svg role="img" aria-labelledby="flip-icon-title" className="flip-icon " width="18" height="18" viewBox="0 0 18 18">
                             <title id="flip-icon-title">Flip</title>
-                            <g id="logged-out" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="logged-out" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                 <g id="iPhone-8-Copy-70" transform="translate(-338.000000, -600.000000)" fill="#999">
                                     <path d="M347.5,608.5 L356,608.5 L356,609.5 L347.5,609.5 L347.5,618 L346.5,618 L346.5,609.5 L338,609.5 L338,608.5 L346.5,608.5 L346.5,600 L347.5,600 L347.5,608.5 Z" id="Plus"></path>
                                 </g>

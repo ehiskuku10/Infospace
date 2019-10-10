@@ -8,10 +8,26 @@ const axiosInstance = axios.create({
 })
 
 const SWITCH_CATEGORY = "SWITCH_CATEGORY"
+const LOAD_PHOTOS = "LOAD_PHOTOS"
+const HAS_LOADED_PHOTOS = "HAS_LOADED_PHOTOS"
 
 export const switchCategory = (photos) => {
     return ({
         type: SWITCH_CATEGORY,
+        photos: photos
+    })
+}
+
+export const hasLoaded = (response) => {
+    return ({
+        type: HAS_LOADED_PHOTOS,
+        response: response
+    })
+}
+
+export const loadPhotos = (photos) => {
+    return ({
+        type: LOAD_PHOTOS,
         photos: photos
     })
 }
@@ -28,19 +44,31 @@ export const fetchPhotos = (e) => (dispatch) => {
     }).then(res => {
            console.log(res.data.photos)
            dispatch(switchCategory(res.data.photos));
+           dispatch(hasLoaded(false));
     })
 }
 
 
 
 export default function reducer(state={
-    photos: []
+    photos: [],
+    loaded: false
 }, action) {
     switch (action.type) {
         case SWITCH_CATEGORY:
             return {
                 ...state,
                 photos: action.photos
+            }
+        case LOAD_PHOTOS:
+            return {
+                ...state,
+                photos: action.photos
+            }
+        case HAS_LOADED_PHOTOS:
+            return {
+                ...state,
+                loaded: action.response
             }
         default:
             return state
