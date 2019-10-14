@@ -1,7 +1,5 @@
-import DisplayBackdrop from './DisplayBackdrop';
-import ChangeCategory from './ChangeCategory';
+import LandingPage from './LandingPage';
 
 export default {
-    DisplayBackdrop,
-    ChangeCategory
+    LandingPage
 };

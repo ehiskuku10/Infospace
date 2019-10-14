@@ -2,7 +2,7 @@ import React from "react"
 import classes from "./HomeFeedNav.css"
 import { NavLink } from "react-router-dom"
 import { connect } from 'react-redux'
-import { fetchPhotos } from '../../../../../Reducers/ChangeCategory'
+import { fetchPhotos } from '../../../../../Reducers/LandingPage'
 import jQuery from "jquery"
 
 
@@ -42,7 +42,7 @@ const HomeFeedNav = ({
 }
 
 const mapStateToProps = state => ({
-    photos: state.ChangeCategory.photos
+    photos: state.LandingPage.photos
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

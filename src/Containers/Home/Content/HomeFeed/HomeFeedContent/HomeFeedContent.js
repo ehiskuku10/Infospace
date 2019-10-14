@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import {HomeFeedList} from "./HomeFeedList/HomeFeedList"
 import classes from "./HomeFeedContent.css"
 import { connect } from 'react-redux'
-import { loadPhotos, hasLoaded } from '../../../../../Reducers/ChangeCategory'
+import { loadPhotos, hasLoaded } from '../../../../../Reducers/LandingPage'
 import axios from "axios"
 import {css} from '@emotion/core'
 import { FadeLoader }  from 'react-spinners'
@@ -39,19 +39,18 @@ class HomeFeedContent extends Component {
 
     render () {
         let view = ""
-        
 
         view = this.props.loaded ? <div className={classes.home_feed_list}>
                     {this.props.photos.map((homeFeedImage, index) => (
-                        <HomeFeedList photos={this.props.photos} key={index}  homeFeedImage={homeFeedImage} />
+                        <HomeFeedList key={index}  homeFeedImage={homeFeedImage} />
                     ))}
-                </div> : <div>
+                </div> : <div> 
                             <FadeLoader
                             css={override}
                             sizeUnit={"px"}
 
                             width={2}
-                            height={15}
+                            height={10}
                             color={'grey'}
                             loading= {true}
                         />
@@ -78,8 +77,8 @@ class HomeFeedContent extends Component {
 })(jQuery)
 
 const mapStateToProps = state => ({
-    photos: state.ChangeCategory.photos,
-    loaded: state.ChangeCategory.loaded
+    photos: state.LandingPage.photos,
+    loaded: state.LandingPage.loaded
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

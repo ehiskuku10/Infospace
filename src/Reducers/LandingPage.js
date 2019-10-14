@@ -1,5 +1,18 @@
 import axios from "axios"
 
+const DISPLAY_BACK_DROP = "DISPLAY_BACK_DROP"
+const SHOW_SIGNUP_PROMPT = "SHOW_SIGNUP_PROMPT"
+const SWITCH_CATEGORY = "SWITCH_CATEGORY"
+const LOAD_PHOTOS = "LOAD_PHOTOS"
+const HAS_LOADED_PHOTOS = "HAS_LOADED_PHOTOS"
+
+export const showSignUpPrompt = (decision) => {
+    return ({
+        type: SHOW_SIGNUP_PROMPT,
+        decision 
+    })
+}
+
 const axiosInstance = axios.create({
     baseURL: 'https://api.pexels.com/v1',
     headers: {
@@ -7,9 +20,13 @@ const axiosInstance = axios.create({
     }
 })
 
-const SWITCH_CATEGORY = "SWITCH_CATEGORY"
-const LOAD_PHOTOS = "LOAD_PHOTOS"
-const HAS_LOADED_PHOTOS = "HAS_LOADED_PHOTOS"
+export const displayBackdrop = (visibility) => ({
+    type: DISPLAY_BACK_DROP,
+    visibility
+    
+})
+
+
 
 export const switchCategory = (photos) => {
     return ({
@@ -53,7 +70,9 @@ export const fetchPhotos = (e) => (dispatch) => {
 
 export default function reducer(state={
     photos: [],
-    loaded: false
+    loaded: false,
+    signUpPrompt: false,
+    backdropVisibility: false
 }, action) {
     switch (action.type) {
         case SWITCH_CATEGORY:
@@ -70,6 +89,17 @@ export default function reducer(state={
             return {
                 ...state,
                 loaded: action.response
+            }
+        case DISPLAY_BACK_DROP:
+            return {
+                ...state,
+                signUpPrompt: false,
+                backdropVisibility: action.visibility
+            }
+        case SHOW_SIGNUP_PROMPT:
+            return {
+                ...state,
+                signUpPrompt: action.decision
             }
         default:
             return state

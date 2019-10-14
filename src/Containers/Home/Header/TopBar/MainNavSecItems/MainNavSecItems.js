@@ -3,7 +3,7 @@ import { Aux } from "../../../../../Components/Hocs/Auxil"
 import { Link } from "react-router-dom"
 import classes from "./MainNavSecItems.css"
 import { connect } from 'react-redux'
-import { displayBackdrop } from '../../../../../Reducers/DisplayBackdrop'
+import { displayBackdrop } from '../../../../../Reducers/LandingPage'
 
 const MainNavSecItems = ({
     showBackdrop
@@ -20,7 +20,7 @@ const MainNavSecItems = ({
 
 
 const mapStateToProps = state => ({
-    backdropVisibility: state.DisplayBackdrop.backdropVisibility
+    backdropVisibility: state.LandingPage.backdropVisibility
 });
   
 const mapDispatchToProps = (dispatch, ownProps) => ({

@@ -1,10 +1,12 @@
 import React from "react"
 import { Aux } from "../../../../../../Components/Hocs/Auxil"
+import { Link } from "react-router-dom"
 import classes from "./HomeFeedList.css"
 
 export const HomeFeedList = (props) => {
     return (
         <Aux>
+            <Link to={``}>
             <div className={classes.home_feed_list}>
                 <div>
 
@@ -56,6 +58,7 @@ export const HomeFeedList = (props) => {
                 </div>
                 <div className={classes.overlay}></div>
             </div>
+            </Link>
         </Aux>
     )
 }
