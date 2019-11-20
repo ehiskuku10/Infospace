@@ -1,0 +1,29 @@
+.logo {
+    width: auto;
+    margin-left: 12px;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo img {
+    height: 30px;
+    width: 30px;
+}
+
+.logo h2 {
+    font-family: HelveticaNeue Condensed;
+    font-size: 24px;
+    margin: 0 9px;
+    height: 100%;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+}

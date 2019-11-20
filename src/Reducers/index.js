@@ -1,5 +1,7 @@
-import LandingPage from './LandingPage';
+import Core from './Core'
+import { reducer as formReducer } from 'redux-form'
 
-export default {
-    LandingPage
+export const reducers = {
+    Core: Core,
+    form: formReducer
 };

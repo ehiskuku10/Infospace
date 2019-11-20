@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import classes from "./Signup.css"
 import { Link } from "react-router-dom"
+import { connect } from "react-redux"
+import { addNewUser } from "../../Reducers/Actions"
+import UserForm from "./Form/Form"
 
 class Signup extends Component {
 
@@ -14,12 +17,7 @@ class Signup extends Component {
                             <h2>join infospace</h2>
                         </div>
                         <div className={classes.form_block__signup}>
-                            <form>
-                                <input name="full" type="text" placeholder="Full Name"/>
-                                <input name="email" type="text" placeholder="Email"/>
-                                <input name="password" type="password" placeholder="Password"/>
-                                <button>Sign Up</button>
-                            </form>
+                            <UserForm onSubmit={this.props.addNewUser} />
                             <p>Or sign up with</p>
                             <Link>
                                 <i></i>
@@ -37,5 +35,11 @@ class Signup extends Component {
         )
     }
 }
+
+const mapDispatchToProps = (dispatch) => ({
+    addNewUser: (values) => dispatch(addNewUser(values))
+})
+
+Signup = connect(() => ({}), mapDispatchToProps)(Signup)
 
 export default Signup

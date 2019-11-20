@@ -81,6 +81,11 @@
     background-color: rgb(231, 152, 152);
 }
 
+.disable{
+    cursor: not-allowed;
+    background-color: rgb(245, 40, 40);
+}
+
 .form_block__signup p {
     font-size: 14px;
     margin-bottom: 20px;
